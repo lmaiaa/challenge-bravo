@@ -4,7 +4,7 @@ module.exports = class Server {
     constructor({ dependencies, routes }) {
         this.dependencies = {
             ...dependencies,
-        }
+        } // não precisa fazer esse destruct se você não está alterando o objeto inicial
         this.routes = routes
     } // crio classe Server que recebe as dependencias e as rotas
 
